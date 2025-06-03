@@ -182,7 +182,7 @@ def run_simulation():
     example_series = matrix_C_stock[99, :]
 
     global sim_window
-    if sim_window is None or not tk.Toplevel.winfo_exists(sim_window):
+    if sim_window is None or not sim_window.winfo_exists():
         sim_window = tk.Toplevel(root)
         sim_window.title("Simulated impacts of disturbance regimes on carbon storage dynamics with REGIME-defined potentials")
     else:
